@@ -15,7 +15,7 @@ const db = mysql.createConnection({
 }, console.log('connected to db'));
 
 app.get("/api/department", (req, res) => {
-    db.query('SELECT ')
+    // db.query('SELECT ')
     res.send('hello from api/department')
 });
 
