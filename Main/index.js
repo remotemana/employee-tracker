@@ -17,12 +17,13 @@ function menu() {
         type: 'list',
         name: 'addList',
         message: 'What would you like to do?',
-        choices: ['View All Employees', 'Add Employee', 'Update Employee Role', 'View All Roles', 'Add Role', 'View All Departments', 'Add Department', 'Quit']
+        choices: ['View All Employees','View All Roles','View All Departments', 'Add Employee',  'Add Role',  'Add Department','Update Employee Role',  'Quit']
     }, ]).then(ans => {
         console.log(ans);
         switch (ans.addList) {
             case 'View All Employees':
                 viewAllEmployees();
+                
                 break;
 
             case 'Add Employee':
@@ -91,7 +92,6 @@ const addEmployee = () => {
                     value: employee.id
                 }
             })
-            console.log(results2)
             inquirer.prompt([{
                     type: 'input',
                     name: 'employeeFirstName',
@@ -174,10 +174,10 @@ const viewAllRoles = () => {
     })
 };
 const addRole = () => {
-    db.query('SELECT title, id FROM role', function (err, results) {
+    db.query('SELECT department_name, id FROM department', function (err, results) {
         const department = results.map(function (department) {
             return {
-                name: department.title,
+                name: department.department_name,
                 value: department.id
             }
         })
