@@ -8,7 +8,7 @@ VALUES ("Front End"),
 INSERT INTO role (title, salary)
 VALUES ("Developer", "100");
 
-INSERT INTO employee (first_name, last_name)
-VALUES ("Lucas", "Roman"),
-       ("Ron", "Swanson"),
-       ("Ricky", "Bobby");
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ("Lucas", "Roman", "1", "3"),
+       ("Ron", "Swanson", "1", "1"),
+       ("Ricky", "Bobby", "1", "2");

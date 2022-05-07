@@ -31,10 +31,12 @@
     n/a
 ---
 ## Links
-
+- https://drive.google.com/file/d/1HVwySGZTeKsqAch7t4ZAIWHOys3m6veC/view 
+- https://github.com/remotemana/employee-tracker
 ---
 ## Mock-Ups
 
+![gif-mock-up](./Main/assets/mock-up/employee-tracker-gif_AdobeCreativeCloudExpress.gif)
 ---
 ## Questions? Contact Me at...
 lucas.e.roman@gmail.com | [github.com](https://github.com/remotemana)
